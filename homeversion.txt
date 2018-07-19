@@ -1,0 +1,30 @@
+			TYPE WHAT IS ROOM FOR YOU!!!!!
+kitchen/living room/bedroom/bathroom      
+			TYPE ITEMS CAN HUNT OR KILL SOMETHING!!!!
+bow/sword
+			TYPE ITEMS CAN EAT!!!!
+eggs/rabit/fruits/sandwich/pig/duck
+			AREAS CAN HUNT!!!!!
+kitchen
+                        SYNTAX OF ORDER!!!!!!
+Verb    /   Noun      /  RoomName   /Side on room/ ItemNeeded /                      CorrectOrderAnswer                                                                  /         WorngOrderAnswer                                                /     TodoIfOrderIsCorrect /AffectsInventory		/CanBeAppliedEverywhere
+look    /around       /kitchen      /evrywhere   /            /There is a table straight ahead and one door on the right.                                                /Where do you want me to look?                                            /kitchen		      /nothing  		/yes
+look    /table        /kitchen      /forward     /            /There is a key on the table.                                                                              /There is nothing on the table! Where do you want me to look?             /table                     /nothing 		        /no
+take    /key          /table        /evrywhere   /            /You have a key in your inventory now.                                                                     /What do you want to take??					           /key                       /import  		        /yes
+open    /door         /kitchen      /right       /            /You entered in living room.                                                                               /Open .. what??							   /living room               /delete 		        /no
+look    /around       /living room  /evrywhere   /            /There is a desk on your right hand... and there is a box on it. There is also a door right ahead.         /Look... where							           /living room               /nothing		        /yes
+look    /desk         /living room  /right       /            /Hmm... There is an unlocked box!                                                                          /Look... where?							   /desk                      /nothing	                /no
+open    /box          /desk         /evrywhere   /            /You opened the box. What is a screwdriver doing in here?                                                  /Open what?							           /desk                      /nothing  		/yes
+take    /screwdriver  /desk         /evrywhere   /            /You have now a screwdriver.                                                                               /I don't see the item you want!                                           /screwdriver               /import   		/yes
+open    /door         /living room  /left        /            /You are again in kitchen!										 /Where do you want to go?						   /kitchen                   /nothing  		/no
+open    /door         /living room  /forward     /            /You are in bedroom!                                                                                       /Where do you want to go?						   /bedroom                   /nothing  		/no
+look    /around       /bedroom      /evrywhere   /            /There is a closet forward and a door on your left hand.                                                   /Where do you want me to look?  					   /bedroom                   /nothing  		/yes
+look    /closet	      /bedroom      /evrywhere   /	      /Closet is closed. Go closer to open it.                                                                   /Where do you want me to look?                                            /bedroom                   /nothing  		/yes
+open    /closet       /bedroom      /forward     /            /There is a key inside!      									         /Open .. what??                                                           /closet                    /nothing  		/no
+take    /key	      /closet       /evrywhere   /            /You have a new key in your inventory.								         /What do you want to take?? 		                                   /keytwo                    /import   		/yes
+open    /door 	      /bedroom      /left        /            /You entered in the bathroom.									 	 /Open what?	                                                           /bathroom	              /nothing  		/no			
+open    /door         /bedroom      /back        /            /You are back in living room                                                                               /Open what?               					           /living room               /nothing  		/no
+look    /around       /bathroom     /evrywhere   /            /There is a shower left                                                                                    /Where do you want to go?	                                           /bathroom                  /nothing  		/yes
+look    /shower	      /bathroom     /evrywhere   /            /a mirror forward and the door you came from in your right hand.                                           /Look... where                                                            /bathroom                  /nothing  		/yes
+open    /shower       /bathroom     /forward     /            /There is a bag in the shower.                                                                             /Open what?                                                               /shower                    /nothing  		/no
+take    /bag          /shower       /evrywhere   /            /There is a key! It seems like the exit key!                                                               /What do you want to take??                                               /bag                       /import   		/yes
